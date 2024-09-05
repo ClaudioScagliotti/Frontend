@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    background: #7db6f2;
+}
+
+h1 {
+    text-align: center;
+}
+#sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; 
+}
+
+#sections button {
+    flex: 1 1 calc(33.333% - 20px); 
+    margin: 5px;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 150px; 
+}
+
+#sections button:hover {
+    background-color: #0056b3;
+}
+
+#exerciseList, #historyList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#exerciseList li, #historyList li {
+    background-color: #ddd;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+li {
+    position: relative;
+    padding-right: 20px; 
+}
+
+span.deleteExercise {
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+span.deleteExercise:hover {
+    color: darkred;
+}
+span{
+    font-size: 30px;
+}
+
+span.deleteSession {
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    align-items: flex-end;
+    float: right;
+}
+
+span.deleteExercise:hover, span.deleteSession:hover {
+    color: darkred;
+}
+
+#exportButton{
+    background-color: #de2114;
+    margin-top: 50px;
+    padding: 10px 20px;
+}
+
+#buttonDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+}
+input#reps,
+input#weight {
+    width: 200px; 
+    height: 30px; 
+    font-size: 14px; 
+    padding: 8px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traccia i Progressi in Palestra</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <h1>Progress Tracker</h1>
+
+    <div id="sections">
+        <button onclick="showSection('bicipiti')">Bicipiti</button>
+        <button onclick="showSection('tricipiti')">Tricipiti</button>
+        <button onclick="showSection('schiena')">Schiena</button>
+        <button onclick="showSection('spalle')">Spalle</button>
+        <button onclick="showSection('petto')">Petto</button>
+        <button onclick="showSection('gambe')">Gambe</button>
+    </div>
+<div id="workoutSection">
+    <div id="exerciseSection" style="display:none;">
+        <h2 id="sectionTitle"></h2>
+        <ul id="exerciseList"></ul>
+        <button onclick="addExercise()">Aggiungi Esercizio</button>
+    </div>
+
+    <div id="exerciseDetails" style="display:none;">
+        <h2 id="exerciseTitle"></h2>
+        <p id="exerciseDescription"></p>
+        <button onclick="editExercise()">Modifica Esercizio</button>
+        <ul id="historyList"></ul>
+        <input type="text" id="reps" placeholder="Ripetizioni">
+        <input type="text" id="weight" placeholder="Peso">
+        <button onclick="saveSession()">Salva Sessione</button>
+    </div>
+    
+    <div id="buttonDiv">
+        <button id="exportButton">Esporta dati</button>
+    </div>
+    
+
+</div>
+    <script src="js/index.js"></script>
+</body>
+</html>
