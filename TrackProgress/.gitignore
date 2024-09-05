@@ -1,0 +1,33 @@
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Cordova-specific files
+platforms/
+plugins/
+merges/
+hooks/
+
+# Ignore IDE/OS generated files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.sublime*
+
+# Android-specific files
+**/android/build/
+**/android/app/build/
+**/android/.gradle/
+**/android/.idea/
+**/android/local.properties
+**/android/.DS_Store
+**/android/gradle.properties
+**/android/gradlew
+**/android/gradlew.bat
+**/android/gradle/
+**/android/captures/
+**/android/output.json
